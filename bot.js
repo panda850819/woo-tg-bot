@@ -1,6 +1,6 @@
 // 引入外部套件
 const TelegramBot = require('node-telegram-bot-api');
-const token = '1929321227:AAEtqIIhP2UO16DCBqjvgW-c3c5ITQ_7wUk'; // TODO:請更改
+const token = process.env["API_KEY"];
 const bot = new TelegramBot(token, { polling: true });
 
 // bot text 
