@@ -35,7 +35,7 @@ bot.onText(/\/start@woobot/, (msg) => {
         ],
         [
           {
-            text: '留言活動，有機會獲得 $50 USD 價值 $WOO'
+            text: '留言活動，有機會獲得 $50 USD 價值 $WOO',
           }
         ]  
       ]
@@ -89,7 +89,6 @@ bot.onText(/留言活動，有機會獲得 $50 USD 價值 $WOO/, (msg, match) =>
                     text: "參與取名活動即可獲得 50 USD 等值的 $WOO!",
                     url: 'https://bit.ly/3ASDm2S'
                 },
-            ],
             ],
         },
     });
