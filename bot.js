@@ -78,22 +78,24 @@ bot.onText(/加入社群/, (msg, match) => {
       },
   });
 });
-
-
-/* WOO Network tw reply */
-bot.onText(/留言活動，有機會獲得50USD價值WOO/, (msg, match) => {
-    bot.sendMessage(msg.chat.id, '留言活動，有機會獲得50USD價值WOO', {
-        "reply_markup": {
-            "inline_keyboard": [
-                {
-                    text: "留言活動，有機會獲得50USD價值WOO",
-                    url: 'https://bit.ly/3ASDm2S'
-                },
-            ],
-        },
-    });
-  });
   
+    /* WOO 官方網站  reply */
+    bot.onText(/留言活動，有機會獲得50USD價值WOO/, (msg, match) => {
+      bot.sendMessage(msg.chat.id, "想了解更多 WOO Network 來看吧！", {
+          "reply_markup": {
+              "inline_keyboard": [
+                  [
+                      {
+                          text: "留言活動，有機會獲得50USD價值WOO",
+                          url: 'https://bit.ly/3ASDm2S'
+                      },
+                  ],
+              ],
+          },
+      });
+    });
+
+
   /* WOO 官方網站  reply */
   bot.onText(/官方網站/, (msg, match) => {
     bot.sendMessage(msg.chat.id, "想了解更多 WOO Network 來看吧！", {
