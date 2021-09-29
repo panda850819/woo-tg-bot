@@ -35,7 +35,7 @@ bot.onText(/\/start@woobot/, (msg) => {
         ],
         [
           {
-            text: '留言活動，有機會獲得 50USD 價值 $WOO',
+            text: '留言活動，有機會獲得 50USD 價值 WOO',
           }
         ]  
       ]
@@ -81,7 +81,7 @@ bot.onText(/加入社群/, (msg, match) => {
   
     /* WOO 官方網站  reply */
     bot.onText(/留言活動，有機會獲得 50USD 價值 $WOO/, (msg, match) => {
-      bot.sendMessage(msg.chat.id, "留言活動，有機會獲得 50USD 價值 $WOO！", {
+      bot.sendMessage(msg.chat.id, "留言活動，有機會獲得 50USD 價值 WOO！", {
           "reply_markup": {
               "inline_keyboard": [
                   [
