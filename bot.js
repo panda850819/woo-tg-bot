@@ -32,42 +32,62 @@ bot.onText(/\/start@woobot/, (msg) => {
           {
             text: '常見問題',
           }
-        ]   
+        ],
+        [
+          {
+            text: '留言活動，有機會獲得 $50 USD 價值 $WOO'
+          }
+        ]  
       ]
       }
   });
   });
 
-
 /* WOO Network tw reply */
 bot.onText(/加入社群/, (msg, match) => {
-    bot.sendMessage(msg.chat.id, socialmedia, {
-        "reply_markup": {
-            "inline_keyboard": [
-                [
-                    {
-                        text: "Facebook",
-                        url: 'https://www.facebook.com/WOONetwork.tw'
-                    },
-                    {
-                      text: "Twitter",
-                      url: 'https://twitter.com/WOOnetwork_CN'
-                  },
-                ],
-                [
+  bot.sendMessage(msg.chat.id, socialmedia, {
+      "reply_markup": {
+          "inline_keyboard": [
+              [
                   {
-                      text: "Medium",
-                      url: 'https://medium.com/@WOONetwork.tw'
+                      text: "Facebook",
+                      url: 'https://www.facebook.com/WOONetwork.tw'
                   },
                   {
-                    text: "LINE",
-                    url: 'https://line.me/ti/g2/5fcFq_yjTQkMcj9YLqdGZQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default'
+                    text: "Twitter",
+                    url: 'https://twitter.com/WOOnetwork_CN'
                 },
               ],
               [
                 {
-                    text: "點此獲取更多連結",
-                    url: 'https://linktr.ee/woonetworktw'
+                    text: "Medium",
+                    url: 'https://medium.com/@WOONetwork.tw'
+                },
+                {
+                  text: "LINE",
+                  url: 'https://line.me/ti/g2/5fcFq_yjTQkMcj9YLqdGZQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default'
+              },
+            ],
+            [
+              {
+                  text: "點此獲取更多連結",
+                  url: 'https://linktr.ee/woonetworktw'
+              },
+          ],
+          ],
+      },
+  });
+});
+
+
+/* WOO Network tw reply */
+bot.onText(/留言活動，有機會獲得 $50 USD 價值 $WOO/, (msg, match) => {
+    bot.sendMessage(msg.chat.id, socialmedia, {
+        "reply_markup": {
+            "inline_keyboard": [
+                {
+                    text: "參與取名活動即可獲得 50 USD 等值的 $WOO!",
+                    url: 'https://bit.ly/3ASDm2S'
                 },
             ],
             ],
