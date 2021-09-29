@@ -82,11 +82,11 @@ bot.onText(/加入社群/, (msg, match) => {
 
 /* WOO Network tw reply */
 bot.onText(/留言活動，有機會獲得50USD價值WOO/, (msg, match) => {
-    bot.sendMessage(msg.chat.id, socialmedia, {
+    bot.sendMessage(msg.chat.id, '留言活動，有機會獲得50USD價值WOO', {
         "reply_markup": {
             "inline_keyboard": [
                 {
-                    text: "參與取名活動即可獲得 50 USD 等值的 $WOO!",
+                    text: "留言活動，有機會獲得50USD價值WOO",
                     url: 'https://bit.ly/3ASDm2S'
                 },
             ],
