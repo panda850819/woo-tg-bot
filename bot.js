@@ -86,7 +86,7 @@ bot.onText(/加入社群/, (msg, match) => {
               "inline_keyboard": [
                   [
                       {
-                          text: "有機會獲得 $50 USD 價值 $WOO",
+                          text: "點我立即查看!",
                           url: 'https://bit.ly/3ASDm2S'
                       },
                   ],
