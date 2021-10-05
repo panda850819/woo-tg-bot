@@ -9,7 +9,7 @@ var faq = '不管你是 KYC 或是地址證明 ..等，大小疑難雜症歡迎�
 var woox = '低至零手續費交易所 - WOO X'
 var woonetwork = 'https://medium.com/@WOONetwork.tw/%E9%99%A4%E4%BA%86%E8%B3%AA%E6%8A%BC-%E6%8C%81%E6%9C%89-woo-%E9%82%84%E6%9C%89%E9%80%99%E9%BA%BC%E5%A4%9A%E7%9A%84%E7%8D%B2%E7%9B%8A%E5%A0%B4%E6%99%AF-c4c5aa04ef33'
 // var poa = '📌[ WOO X 關於台灣地區用戶需完成身分認證公告 ] \n\n WOO X 已於 6 月 17 號上線身分認證功能，根據法規 WOO X 將要求台灣地區的用戶完成身分認證。若台灣用戶於7月1號未完成身分認證，將會被限制交易、質押及充提領等服務。為享有帳戶權益，提醒有註冊WOO X的用戶即早完成並通過身分認證！\n\n\ 🔎 身分驗證注意事項：\n\n 1) 僅接受英文資料 \n\n 2) 身分認證僅接受護照 \n\n 3) 地址證明可提交中文版本或身分證正反面（請在證明中附上英文的 Legal Name ，以供 AML 團隊進行核對） \n\n 4) 關於身分認證常見問答與流程：https://support.woo.org/hc/en-001/articles/4405873990681--Individual-Account-KYC-Introduction \n\n 若身分認證上有任何問題，請傳送至support@woo.network，我們將盡快為您處理。\n\n 感謝您對 WOO X的支持! \n\n WOO X Team \n\n'
-var kyc = 'KYC 教學文章點我： \n\n https://bit.ly/3uBrGz2'
+var kyc = '跟我們一起來 KYC 吧！ \n\n https://bit.ly/3uBrGz2'
 
 bot.onText(/\/start@woobot/, (msg) => {
   bot.sendMessage(msg.chat.id, "hello", {
@@ -160,7 +160,6 @@ bot.onText(/加入社群/, (msg, match) => {
     if (action === '/KYC') {
       text = kyc;
       bot.editMessageText(text, opts);
-      bot.sendPhoto(msg.chat.id,'https://i.imgur.com/t2RNelO.png')
     }
   
     if (action === '/WOO_Network') {
