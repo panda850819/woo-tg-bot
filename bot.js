@@ -32,12 +32,7 @@ bot.onText(/\/start@woobot/, (msg) => {
           {
             text: '常見問題',
           }
-        ],
-        [
-          {
-            text: '留言活動，有機會獲得 50USD 價值 WOO',
-          }
-        ]  
+        ]
       ]
       }
   });
@@ -78,23 +73,6 @@ bot.onText(/加入社群/, (msg, match) => {
       },
   });
 });
-  
-    /* WOO 官方網站  reply */
-    bot.onText(/留言活動，有機會獲得 50USD 價值 WOO/, (msg, match) => {
-      bot.sendMessage(msg.chat.id, "留言活動，有機會獲得 50USD 價值 WOO！", {
-          "reply_markup": {
-              "inline_keyboard": [
-                  [
-                      {
-                          text: "點我立即查看!",
-                          url: 'https://bit.ly/3ASDm2S'
-                      },
-                  ],
-              ],
-          },
-      });
-    });
-
 
   /* WOO 官方網站  reply */
   bot.onText(/官方網站/, (msg, match) => {
