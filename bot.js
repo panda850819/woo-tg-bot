@@ -65,9 +65,13 @@ bot.onText(/加入社群/, (msg, match) => {
             ],
             [
               {
+                text: "Telegram 公告" 
+                url: "https://t.me/WOONetworkTWann"
+              },
+              {
                   text: "點此獲取更多連結",
                   url: 'https://linktr.ee/woonetworktw'
-              },
+              }
           ],
           ],
       },
