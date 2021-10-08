@@ -61,18 +61,18 @@ bot.onText(/加入社群/, (msg, match) => {
                 {
                   text: "LINE",
                   url: 'https://line.me/ti/g2/5fcFq_yjTQkMcj9YLqdGZQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default'
-              },
-            ],
-            [
-              {
-                text: "Telegram 公告" 
-                url: "https://t.me/WOONetworkTWann"
-              },
-              {
+                },
+              ],
+              [
+                {
+                  text: "Telegram 公告",
+                  url: "https://t.me/WOONetworkTWann"
+                },
+                {
                   text: "點此獲取更多連結",
                   url: 'https://linktr.ee/woonetworktw'
-              }
-          ],
+                }
+              ],
           ],
       },
   });
