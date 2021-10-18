@@ -32,7 +32,12 @@ bot.onText(/\/start@woobot/, (msg) => {
           {
             text: '常見問題',
           }
-        ]
+        ],
+        [
+          {
+            text: 'iOS 下載活動，有機會獲得 50USD 價值 WOO',
+          }
+        ]  
       ]
       }
   });
@@ -72,6 +77,22 @@ bot.onText(/加入社群/, (msg, match) => {
                   text: "點此獲取更多連結",
                   url: 'https://linktr.ee/woonetworktw'
                 }
+              ],
+          ],
+      },
+  });
+});
+// iOS 註冊活動
+
+bot.onText(/iOS 下載活動，有機會獲得 50USD 價值 WOO/, (msg, match) => {
+  bot.sendMessage(msg.chat.id, "iOS 下載活動，有機會獲得 50USD 價值 WOO！", {
+      "reply_markup": {
+          "inline_keyboard": [
+              [
+                  {
+                      text: "點我立即查看!",
+                      url: 'https://bit.ly/3lQujuk'
+                  },
               ],
           ],
       },
