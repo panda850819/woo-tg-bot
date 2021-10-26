@@ -31,6 +31,11 @@ bot.onText(/\/start@woobot/, (msg) => {
           {
             text: '常見問題',
           }
+        ],
+        [
+          {
+            text : '萬聖節活動'
+          }
         ]
       ]
       }
@@ -77,21 +82,21 @@ bot.onText(/加入社群/, (msg, match) => {
   });
 });
 
-// iOS 註冊活動
-// bot.onText(/iOS 下載活動，有機會獲得 50USD 價值 WOO/, (msg, match) => {
-//   bot.sendMessage(msg.chat.id, "iOS 下載活動，有機會獲得 50USD 價值 WOO！", {
-//       "reply_markup": {
-//           "inline_keyboard": [
-//               [
-//                   {
-//                       text: "點我立即查看!",
-//                       url: 'https://bit.ly/3lQujuk'
-//                   },
-//               ],
-//           ],
-//       },
-//   });
-// });
+// 萬聖節活動
+bot.onText(/萬聖節活動/, (msg, match) => {
+  bot.sendMessage(msg.chat.id, "不給 $WOO 就搗蛋！", {
+      "reply_markup": {
+          "inline_keyboard": [
+              [
+                  {
+                      text: "點我立即查看!",
+                      url: 'https://bit.ly/3b9PK3d'
+                  },
+              ],
+          ],
+      },
+  });
+});
 
   /* WOO 官方網站  reply */
   bot.onText(/官方網站/, (msg, match) => {
