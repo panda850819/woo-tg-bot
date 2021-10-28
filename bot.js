@@ -151,7 +151,7 @@ bot.onText(/抽獎活動：不給 WOO 就搗蛋/, (msg, match) => {
 
   // WOOFi
   bot.onText(/WOOFi/, (msg, match) => {
-    bot.sendMessage(msg.chat.id, faq, {
+    bot.sendMessage(msg.chat.id, '最低手續費的去中心化交易所 - WOOFi Swap', {
         "reply_markup": {
             "inline_keyboard": [
                 [
