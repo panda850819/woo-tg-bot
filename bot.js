@@ -156,7 +156,7 @@ bot.onText(/抽獎活動：不給 WOO 就搗蛋/, (msg, match) => {
             "inline_keyboard": [
                 [
                   {
-                      text: '最低手續費的去中心化交易所 - WOOFi Swap',
+                      text: 'WOOFi Swap',
                       url: 'https://fi.woo.org/',
                   }
                 ]
