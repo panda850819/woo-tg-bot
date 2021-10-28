@@ -148,6 +148,22 @@ bot.onText(/抽獎活動：不給 WOO 就搗蛋/, (msg, match) => {
         },
     });
   });
+
+  // WOOFi
+  bot.onText(/WOOFi/, (msg, match) => {
+    bot.sendMessage(msg.chat.id, faq, {
+        "reply_markup": {
+            "inline_keyboard": [
+                [
+                  {
+                      text: '最低手續費的去中心化交易所 - WOOFi Swap',
+                      url: 'https://fi.woo.org/',
+                  }
+                ]
+            ],
+        },
+    });
+  });
   
   /* Call Back */
   bot.on('callback_query', function onCallbackQuery(callbackQuery) {
