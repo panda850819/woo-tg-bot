@@ -90,7 +90,7 @@ bot.onText(/WOO 一週年活動！/, (msg, match) => {
               [
                   {
                       text: "點我立即參加!",
-                      url: 'https://bit.ly/3b9PK3d'
+                      url: 'https://www.facebook.com/WOONetwork.tw/photos/a.110292891399394/123335090095174/'
                   },
               ],
           ],
