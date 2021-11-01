@@ -34,7 +34,7 @@ bot.onText(/\/start@woobot/, (msg) => {
         ],
         [
           {
-            text : '抽獎活動：不給 WOO 就搗蛋'
+            text : 'WOO 一週年活動！'
           }
         ]
       ]
@@ -82,9 +82,9 @@ bot.onText(/加入社群/, (msg, match) => {
   });
 });
 
-// 萬聖節活動
-bot.onText(/抽獎活動：不給 WOO 就搗蛋/, (msg, match) => {
-  bot.sendMessage(msg.chat.id, "萬聖節快樂！不給 $WOO 就搗蛋！", {
+// 一週年活動
+bot.onText(/WOO 一週年活動！/, (msg, match) => {
+  bot.sendMessage(msg.chat.id, "$WOO 一週年生日快樂！", {
       "reply_markup": {
           "inline_keyboard": [
               [
