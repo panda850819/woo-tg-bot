@@ -84,7 +84,7 @@ bot.onText(/加入社群/, (msg, match) => {
 
 // 一週年活動
 bot.onText(/WOO 一週年活動！/, (msg, match) => {
-  bot.sendMessage(msg.chat.id, "$WOO 一週年生日快樂！\n WOO Network TW 和鏈新聞聯合舉辦抽獎活動！\n 可以至雙方臉書粉絲團完成任務抽取 1,800 $WOO 和限量 NFT！", {
+  bot.sendMessage(msg.chat.id, "$WOO 一週年生日快樂！\n\n WOO Network TW 和鏈新聞聯合舉辦抽獎活動！\n\n 可以至雙方臉書粉絲團完成任務抽取 1,800 $WOO 和限量 NFT！", {
       "reply_markup": {
           "inline_keyboard": [
               [
