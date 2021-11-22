@@ -84,14 +84,18 @@ bot.onText(/加入社群/, (msg, match) => {
 
 // 一週年活動
 bot.onText(/WOO 一週年活動！/, (msg, match) => {
-  bot.sendMessage(msg.chat.id, "$WOO 一週年生日快樂！", {
+  bot.sendMessage(msg.chat.id, "$WOO 一週年生日快樂！WOO Network TW 和鏈新聞聯合舉辦抽獎活動！將可以抽取 1800 $WOO 和限量 NFT！", {
       "reply_markup": {
           "inline_keyboard": [
               [
                   {
-                      text: "點我立即參加!",
+                      text: "參加 WOO Network TW 社群活動!",
                       url: 'https://www.facebook.com/WOONetwork.tw/photos/a.110292891399394/123335090095174/'
                   },
+                  {
+                    text: "參加和鏈新聞共同舉辦的社群活動!",
+                    url: 'https://www.facebook.com/WOONetwork.tw/photos/a.110292891399394/123335090095174/'
+                },
               ],
           ],
       },
