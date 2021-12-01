@@ -31,12 +31,13 @@ bot.onText(/\/start@woobot/, (msg) => {
           {
             text: '常見問題',
           }
-        ],
-        [
-          {
-            text : 'WOO 一週年活動！'
-          }
         ]
+        // ,
+        // [
+        //   {
+        //     text : 'WOO 一週年活動！'
+        //   }
+        // ]
       ]
       }
   });
@@ -83,24 +84,24 @@ bot.onText(/加入社群/, (msg, match) => {
 });
 
 // 一週年活動
-bot.onText(/WOO 一週年活動！/, (msg, match) => {
-  bot.sendMessage(msg.chat.id, "$WOO 一週年生日快樂！\n\n WOO Network TW 和鏈新聞聯合舉辦抽獎活動！\n\n 可以至雙方臉書粉絲團完成任務抽取 1,800 $WOO 和限量 NFT！", {
-      "reply_markup": {
-          "inline_keyboard": [
-              [
-                  {
-                      text: "WOO Network TW",
-                      url: 'https://www.facebook.com/WOONetwork.tw/photos/a.110292891399394/128321392929877'
-                  },
-                  {
-                    text: "鏈新聞",
-                    url: 'https://www.facebook.com/abmedia.io/photos/a.443246683073052/1009998479731200/'
-                },
-              ],
-          ],
-      },
-  });
-});
+// bot.onText(/WOO 一週年活動！/, (msg, match) => {
+//   bot.sendMessage(msg.chat.id, "$WOO 一週年生日快樂！\n\n WOO Network TW 和鏈新聞聯合舉辦抽獎活動！\n\n 可以至雙方臉書粉絲團完成任務抽取 1,800 $WOO 和限量 NFT！", {
+//       "reply_markup": {
+//           "inline_keyboard": [
+//               [
+//                   {
+//                       text: "WOO Network TW",
+//                       url: 'https://www.facebook.com/WOONetwork.tw/photos/a.110292891399394/128321392929877'
+//                   },
+//                   {
+//                     text: "鏈新聞",
+//                     url: 'https://www.facebook.com/abmedia.io/photos/a.443246683073052/1009998479731200/'
+//                 },
+//               ],
+//           ],
+//       },
+//   });
+// });
 
   /* WOO 官方網站  reply */
   bot.onText(/官方網站/, (msg, match) => {
