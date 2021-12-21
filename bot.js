@@ -85,16 +85,16 @@ bot.onText(/加入社群/, (msg, match) => {
 
 // 聖誕節預熱活動
 bot.onText(/WOO 聖誕節活動!/, (msg, match) => {
-  bot.sendMessage(msg.chat.id, "🎄 All I want for Christmas is… $WOO ! 🎄 \n\n 🎁 WOO Network 聖誕禮物來啦! \n\n 總獎金池 1,800 $WOO 🎄 連續 3 天送給你 🎄", {
+  bot.sendMessage(msg.chat.id, "🎄 All I want for Christmas is… $WOO ! 🎄\n\n🎁 WOO Network 聖誕禮物來啦! \n\n 總獎金池 1,800 $WOO 🎄 連續 3 天送給你 🎄", {
       "reply_markup": {
           "inline_keyboard": [
               [
                   {
-                      text: "Facebook 活動，分享抽取 $WOO 代幣",
+                      text: "Facebook 活動",
                       url: 'https://bit.ly/3H0xO9b'
                   },
                   {
-                    text: "Twitter 活動，分享抽取 $WOO 代幣",
+                    text: "Twitter 活動",
                     url: 'https://bit.ly/3qhmQVW'
                 },
               ],
