@@ -85,7 +85,7 @@ bot.onText(/加入社群/, (msg, match) => {
 
 // 聖誕節預熱活動
 bot.onText(/聖誕總獎金池 3600 WOO/, (msg, match) => {
-  bot.sendMessage(msg.chat.id, "🎄 All I want for Christmas is… $WOO ! 🎄\n\n🎁 WOO Network 聖誕禮物來啦! \n\n 總獎金池 3,600 $WOO 🎄 連續 3 天送給你 🎄", {
+  bot.sendMessage(msg.chat.id, "🎄 All I want for Christmas is… $WOO ! 🎄\n\n🎁 WOO Network 聖誕禮物來啦! \n\n Facebook & Twitter 總獎金池 3,600 $WOO 🎄 連續 3 天送給你 🎄", {
       "reply_markup": {
           "inline_keyboard": [
               [
@@ -119,14 +119,14 @@ bot.onText(/聖誕總獎金池 3600 WOO/, (msg, match) => {
     });
   });
   
-  bot.onText(/WOO X/, (msg, match) => {
+  bot.onText(/體驗低至零手續費交易/, (msg, match) => {
     bot.sendMessage(msg.chat.id, woox, {
         "reply_markup": {
             "inline_keyboard": [
                 [
                     {
-                        text: '點我註冊 WOO X !',
-                        url: 'https://x.woo.org/register'
+                        text: '立即開始!',
+                        url: 'https://referral.woo.org/telegrambot '
                     },
                 ],
             ],
