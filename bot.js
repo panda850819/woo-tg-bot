@@ -85,7 +85,7 @@ bot.onText(/加入社群/, (msg, match) => {
 
 // 聖誕節預熱活動
 bot.onText(/聖誕總獎金池 3600 WOO/, (msg, match) => {
-  bot.sendMessage(msg.chat.id, "🎄 All I want for Christmas is… $WOO ! 🎄\n\n🎁 WOO Network 聖誕禮物來啦! \n\n 總獎金池 1,800 $WOO 🎄 連續 3 天送給你 🎄", {
+  bot.sendMessage(msg.chat.id, "🎄 All I want for Christmas is… $WOO ! 🎄\n\n🎁 WOO Network 聖誕禮物來啦! \n\n 總獎金池 3,600 $WOO 🎄 連續 3 天送給你 🎄", {
       "reply_markup": {
           "inline_keyboard": [
               [
