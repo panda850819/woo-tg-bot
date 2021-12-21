@@ -20,7 +20,7 @@ bot.onText(/\/start@woobot/, (msg) => {
           }
           , 
           {
-            text: 'WOO X',
+            text: '體驗低至零手續費交易',
           }
         ],   
         [
