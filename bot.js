@@ -33,11 +33,11 @@ bot.onText(/\/start@woobot/, (msg) => {
           }
         ]
         ,
-        // [
-        //   {
-        //     text : '聖誕總獎金池 3600 WOO'
-        //   }
-        // ]
+        [
+          {
+            text : 'DeFi 2.0 的解決方案'
+          }
+        ]
       ]
       }
   });
@@ -102,6 +102,25 @@ bot.onText(/加入社群/, (msg, match) => {
 //       },
 //   });
 // });
+
+bot.onText(/低至 0.025% 手續費的 DEX/, (msg, match) => {
+  bot.sendMessage(msg.chat.id, "WOOFi Swap 利用其流動性網路和機構的做市技術，在幣安智能鏈（ Binance Smart Chain, BSC) 上提供最佳訂價和最低滑點 \n\n 現也提供 WOOFi Staking 讓用戶可以在鏈上進行質押。", {
+      "reply_markup": {
+          "inline_keyboard": [
+              [
+                  {
+                      text: "最低 0.025% 交易手續費的 DEX",
+                      url: 'https://bit.ly/3teCjJy'
+                  },
+                  {
+                    text: "WOOFi 介紹",
+                    url: 'https://bit.ly/34tSt7s'
+                },
+              ],
+          ],
+      },
+  });
+});
 
   /* WOO 官方網站  reply */
   bot.onText(/官方網站/, (msg, match) => {
