@@ -25,11 +25,11 @@ bot.onText(/\/start@woobot/, (msg) => {
         ],   
         [
           {
-            text: 'WOO X-體驗低至零手續費交易',
+            text: 'WOO X - 體驗低至零手續費交易',
           }
           , 
           {
-            text: 'WOOFi-去中心化交易所',
+            text: 'WOOFi - 去中心化交易所',
           }
         ]
         ,
@@ -103,7 +103,7 @@ bot.onText(/加入社群/, (msg, match) => {
 //   });
 // });
 
-bot.onText(/WOOFi-去中心化交易所/, (msg, match) => {
+bot.onText(/WOOFi - 去中心化交易所/, (msg, match) => {
   bot.sendMessage(msg.chat.id, "WOOFi Swap 利用其流動性網路和機構的做市技術，在幣安智能鏈（ Binance Smart Chain, BSC) 上提供最佳訂價和最低滑點\n\n現也提供 WOOFi Staking 讓用戶可以在鏈上進行質押。", {
       "reply_markup": {
           "inline_keyboard": [
@@ -138,7 +138,7 @@ bot.onText(/WOOFi-去中心化交易所/, (msg, match) => {
     });
   });
   
-  bot.onText(/WOO X-體驗低至零手續費交易/, (msg, match) => {
+  bot.onText(/WOO X - 體驗低至零手續費交易/, (msg, match) => {
     bot.sendMessage(msg.chat.id, woox, {
         "reply_markup": {
             "inline_keyboard": [
@@ -174,20 +174,20 @@ bot.onText(/WOOFi-去中心化交易所/, (msg, match) => {
   });
 
   // WOOFi
-  bot.onText(/WOOFi/, (msg, match) => {
-    bot.sendMessage(msg.chat.id, '最低手續費的去中心化交易所 - WOOFi Swap', {
-        "reply_markup": {
-            "inline_keyboard": [
-                [
-                  {
-                      text: 'WOOFi Swap',
-                      url: 'https://bit.ly/3ESSX3r',
-                  }
-                ]
-            ],
-        },
-    });
-  });
+  // bot.onText(/WOOFi/, (msg, match) => {
+  //   bot.sendMessage(msg.chat.id, '最低手續費的去中心化交易所 - WOOFi Swap', {
+  //       "reply_markup": {
+  //           "inline_keyboard": [
+  //               [
+  //                 {
+  //                     text: 'WOOFi Swap',
+  //                     url: 'https://bit.ly/3ESSX3r',
+  //                 }
+  //               ]
+  //           ],
+  //       },
+  //   });
+  // });
   
   /* Call Back */
   bot.on('callback_query', function onCallbackQuery(callbackQuery) {
